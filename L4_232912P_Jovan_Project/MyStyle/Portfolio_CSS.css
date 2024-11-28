@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan';
+}
+
+body{
+    font-family: 'League Spartan';
+}
+
+nav{
+    text-align: center;
+    background-color: #2d343f;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 1em;
+    color: #cdc098;
+    font-size: 24pt;
+}
+
+nav a:hover{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+}
+
+.right-menu{
+    margin-right: 2%;
+    padding: 4%;
+}
+
+.home{
+    margin-left: 6%;
+    letter-spacing: -0.15em;     
+}
+
+#p1{
+    font-size: 60pt;
+}
+
+#p2{
+    font-size: 48pt;
+}
+
+#headertext{
+    text-align: center;
+    font-size: 48pt;
+    color: #a59169;
+    background-color: #2d343f;
+}
+
+.section1{
+    background-color: #2d343f;
+    height: 700px;
+    width: 100%;
+    display: flex;
+} 
+
+.section2{
+    background-color: #232739;
+    height: 900px;
+    width: 100%;
+    display: flex;
+}
+
+footer{
+    background-color: #2e3035;
+    height: 450px;
+    width: 100%;
+    display: flex;
+}
+
+#copyright{
+    color: #fefefe;
+    height: 5%;
+    position: relative;
+    top: 95%;
+    right: 29%;
+}
+
+#footerbutton{
+    border: none;
+    background-color: none;
+    width: 10%;
+    height: 10%;
+    position: relative;
+    top: 88%;
+    left: 2%;
+}
+
+#backtoptext{
+    color: black;
+    font-size: 12pt;
+}
+
+
+#footer-container{
+    width: 70%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    position: relative;
+    top: 5%;
+    left: 15%;
+    text-align: center;
+}
+
+#footerheader{
+    grid-column: 1/span 3;
+    text-align: center;
+    font-size: 36pt;
+    color: #cdc098;
+}
+
+#gmail{
+    grid-column: 1/span 2;
+}
+
+.icons{
+    width: 18%;
+    height: 72%;
+    position: relative;
+    top: 25%;
+    right: 1%;
+}
+
+#gmailicon{
+    width: 9%;
+    height: 81%;
+}
+
+#whatsappicon{
+    width: 18%;
+    height: 72%;
+}
+
+.footerinfo{
+    font-size: 18pt;
+    color: white;
+}
+

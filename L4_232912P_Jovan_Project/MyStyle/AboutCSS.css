@@ -1,0 +1,42 @@
+.grid-container{
+    width: 35%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr,3fr;
+    margin-left: 26%;
+    text-decoration: none;
+    padding: 1em;
+    text-align: center;
+    column-gap: 5em;
+}
+
+.grid-1{
+    grid-column: 1/span 3;
+    color: rgb(205, 192, 152);
+    font-size: 36pt;
+}
+
+.grid-5, .grid-6, .grid-7{
+    font-size: 24pt;
+}
+.grid-2, .grid-3, .grid-4{
+    font-size: 36pt;
+    position: relative;
+    top: 45%;
+}
+.grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7{
+    color: white;
+}
+
+.section2{
+    background-color: rgb(35, 39, 57);
+    height: 1480px;
+    width: 100%;
+    display: flex;
+}
+
+.MyJourney{
+    width: 100%;
+    height: 100%;
+}

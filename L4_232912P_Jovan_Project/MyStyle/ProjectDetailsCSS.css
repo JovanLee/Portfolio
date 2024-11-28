@@ -1,0 +1,158 @@
+*{
+    scroll-snap-type: y proximity;
+}
+
+.section2{
+    height: 2300px;
+    scroll-snap-align: start;
+}
+
+#headtext, #skilltext{
+    font-size: 30pt;
+}
+
+#skills-container{
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-rows: (7, 1fr);
+    grid-template-columns: (4, 1fr);
+    position: relative;
+    left: 15%;
+    top: 5%;
+    color: white;
+}
+
+#grid-container{
+    width: 70%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: (3, 1fr);
+    position: relative;
+    right: 8%;
+    top: 10%;
+    row-gap: 3em;
+}
+
+#projectdetailstext{
+    color: #fefefe;
+    font-size: 36pt;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    top: 2%;
+    left: 38%;
+}
+
+.imgs{
+    width: 20%;
+    height: 35%;
+    float: left;
+}
+
+#titanicimg{
+    height: 30%;
+}
+
+.header{
+    color: #cdc098;
+    font-size: 30pt;
+}
+
+.text{
+    color: #fefefe;
+    font-size: 18pt;
+}
+
+#grid-5{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#grid-3{
+    position: relative;
+    left: 25%;
+}
+
+#grid-4{
+    position: relative;
+    left: 85%;
+}
+
+.progressbar{
+    grid-column: 2 /span 4;
+    /* background-color: black;
+    background:linear-gradient(left, green 75%, black 75%); 
+    color: white;  */
+    padding: 1%; 
+    text-align: right; 
+    height: 20%;
+    font-size: 20px; 
+    border-radius: 10px; 
+}
+
+#grid-6{
+    background: -webkit-linear-gradient(left, #4faf5d 45%,black 45%);
+    background:    -moz-linear-gradient(left, #4faf5d 45%, black 45%);
+    background:     -ms-linear-gradient(left, #4faf5d 45%,black 45%);
+    background:      -o-linear-gradient(left, #4faf5d  45%,black 45%);
+    background:         linear-gradient(to right, #4faf5d  45%,black 45%);
+}
+
+#grid-8{
+    background: -webkit-linear-gradient(left, #4faf5d 30%,black 30%);
+    background:    -moz-linear-gradient(left, #4faf5d 30%, black 30%);
+    background:     -ms-linear-gradient(left, #4faf5d 30%,black 30%);
+    background:      -o-linear-gradient(left, #4faf5d  30%,black 30%);
+    background:         linear-gradient(to right, #4faf5d  30%,black 30%);
+}
+
+#grid-10{
+    background: -webkit-linear-gradient(left, #4faf5d 25%,black 25%);
+    background:    -moz-linear-gradient(left, #4faf5d 25%, black 25%);
+    background:     -ms-linear-gradient(left, #4faf5d 25%,black 25%);
+    background:      -o-linear-gradient(left, #4faf5d  25%,black 25%);
+    background:         linear-gradient(to right, #4faf5d  25%,black 25%);
+}
+
+#grid-12{
+    background: -webkit-linear-gradient(left, #4faf5d 25%,black 25%);
+    background:    -moz-linear-gradient(left, #4faf5d 25%, black 25%);
+    background:     -ms-linear-gradient(left, #4faf5d 25%,black 25%);
+    background:      -o-linear-gradient(left, #4faf5d  25%,black 25%);
+    background:         linear-gradient(to right, #4faf5d  25%,black 25%);
+}
+
+#grid-14{
+    background: -webkit-linear-gradient(left, #4faf5d 35%,black 35%);
+    background:    -moz-linear-gradient(left, #4faf5d 35%, black 35%);
+    background:     -ms-linear-gradient(left, #4faf5d 35%,black 35%);
+    background:      -o-linear-gradient(left, #4faf5d  35%,black 35%);
+    background:         linear-gradient(to right, #4faf5d  35%,black 35%);
+}
+
+#grid-16{
+    background: -webkit-linear-gradient(left, #4faf5d 25%,black 25%);
+    background:    -moz-linear-gradient(left, #4faf5d 25%, black 25%);
+    background:     -ms-linear-gradient(left, #4faf5d 25%,black 25%);
+    background:      -o-linear-gradient(left, #4faf5d  25%,black 25%);
+    background:         linear-gradient(to right, #4faf5d  25%,black 25%);
+}
+
+.searchhead{
+    color: #cdc098;
+    font-size: 60pt;
+    padding: 1em;
+    position: relative;
+    left: 3%;
+    bottom: 3%;
+}
+
+#musicprog, #uiuxweb{
+    position: relative;
+    bottom: 4%;
+}
+
+text{
+    line-height: 1em;
+}

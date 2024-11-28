@@ -1,0 +1,250 @@
+*{
+    scroll-snap-type: y proximity;
+}
+
+.section2{
+    scroll-snap-align: start;
+}
+
+.MyPhoto{   
+    width: 80%;
+    height: 100%;
+}
+
+.grid-container{
+    width: 90%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin-left: 5%;
+}
+
+.grid-1{
+    margin-right: 5%;
+    text-align: center;
+}
+
+.grid-2{
+    grid-column:2/span 2;
+    grid-row:1/span 2;
+    position: relative;
+    left: 2em;
+}
+
+.grid-1{
+    position: relative;
+    bottom: -120px;
+}
+
+.grid-3{
+    position: relative;
+    bottom: -50px;
+}
+
+.name{
+    color: #cdc098;
+    line-height: 42%;
+    font-size: 72pt;
+    letter-spacing: -0.1em;
+}
+
+.intro{
+    color: #cdc098;
+    font-size: 36pt;
+}
+
+.skills{
+    color: #fefefe;
+    font-size: 36pt;
+}
+
+.grid-4{
+    color: #cdc098;
+    font-size: 36pt;
+}
+
+.grid-5{
+    color:#fefefe;
+    font-size: 24pt;
+}
+
+.contact-me-button{
+    background-color: #cdc098;
+    color: #2b323e;
+    border-radius: 8px;
+    height: 75px;
+    width: 150px;
+    font-size: 24px;
+    position: relative;
+    top: 5%;
+    left: 25%;
+}
+
+.contact-me-button:hover{
+    background-color: orange;
+    color: white;
+    border: 1pt solid black;
+}
+
+.grid-allworks{
+    width: 60%;
+    height: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    position: relative;
+    left: 10em;
+    row-gap: 1em;
+}
+
+.grid-myworks{
+    display: grid;
+    width: 80%;
+    height: 70%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    position: relative;
+    gap: 0.5em;
+    /* left: 20%; */
+    right: 8%;
+    top: 20%;
+}
+
+#buttons, #mywork{
+    grid-column: 1/ span 4;
+}
+
+.worksbtn{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-bottom: 1em;
+    color: #fefefe;
+    font-size: 24pt;
+}
+
+#myworktext{
+    color: #fefefe;
+    font-size: 36pt;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    top: 6%;
+    left: 40%;
+}
+
+#contactbutton{
+    border: none;
+    background-color: #232739;
+    font-size: 24pt;
+    width: auto;
+    height: auto;
+    color: #fefefe;
+}
+
+.photo{
+    width: 100%;
+    height: 100%;
+}
+
+#uiuxcard{
+    grid-column: 1/ span 3;
+    grid-row: 2/ span 3;
+}
+
+#p2card{
+    grid-column: 4/ span 5;
+    grid-row: 1/ span 3;
+}
+
+#p2info{
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -205%);
+    text-align: center;
+}
+
+a{
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.myproject:visited{
+    color: beige;
+}
+
+#uiuxinfo{
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -170%);
+    text-align: center;
+}
+
+#p1info{
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -215%);
+    text-align: center;
+}
+
+#p2info, #uiuxinfo{
+    font-size: 24pt;
+    color: #fefefe;
+}
+
+#p1info{
+    font-size: 12pt;
+    color: #fefefe;
+}
+
+#python2, #uiux, #python1{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    transition: 0.3s ease-in-out;
+}
+
+#p2card:hover #python2, #uiuxcard:hover #uiux, #p1card:hover #python1{
+    filter: grayscale(0.8)
+    brightness(0.3);
+}
+
+#p2card:hover::after, #uiuxcard:hover::after, #p1card:hover::after{
+    opacity: 1;
+    inset: 20px;
+}
+
+#p2card:hover #p2info, #uiuxcard:hover #uiuxinfo, #p1card:hover #p1info{
+    scale: 1;
+    opacity: 1;
+    transition: 0.6s ease-in-out;
+}
+
+#p2card:hover #ptitanic, #uiuxcard:hover #uiuxheadinfo, #p1card:hover #pmusic{
+    scale: 1;
+    opacity: 1;
+}
+
+#p2card:hover #titanicinfo, #uiuxcard:hover #uiuxdescinfo, #p1card:hover #musicinfo{
+    scale: 1;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#p2card::after, #uiuxcard::after, #p1card::after{
+    /* content: ""; */
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 2px solid #fefefe;
+    /* background-color: rgb(48, 46, 43); */
+    background: transparent;
+    backdrop-filter: blur(1px);
+    opacity: 0;
+    transition: 0.3s ease;
+}
